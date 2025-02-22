@@ -1,6 +1,8 @@
 # DOOMer
 A (mostly) functional DOOM WAD manager based on (q)ZDL, using WinForms and NET 8.0.
 
+Includes support for Drag + Drop launch, grouped PWADs, and launching directories.
+
 # Requirements
 Running DOOMer [requires the NET 8.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (https://dotnet.microsoft.com/en-us/download/dotnet/8.0) on Windows 7 (64-bit) or above.
 
