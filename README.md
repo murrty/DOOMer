@@ -2,7 +2,7 @@
 A (mostly) functional DOOM WAD manager based on (q)ZDL, using WinForms and NET 8.0.
 
 # Requirements
-Running DOOMer [requires the NET 8.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (https://dotnet.microsoft.com/en-us/download/dotnet/8.0) on Windows 7 or above.
+Running DOOMer [requires the NET 8.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) (https://dotnet.microsoft.com/en-us/download/dotnet/8.0) on Windows 7 (64-bit) or above.
 
 # WADs
 Supports `WAD`, `PWAD`, `IWAD`, `PK3`, `IPK3`, `PK7`, `IPK7`, `7z`... okay you get the idea.
