@@ -1,0 +1,40 @@
+﻿namespace DOOMer.Core;
+
+using System;
+
+[Flags]
+public enum DMFLAGS3 : uint {
+    None = 0x0,
+    NoPlayerClipping_COOP = 0x1,
+    ShareKeys_COOP = 0x2,
+    LocalPickups_COOP = 0x4,
+    NoLocalPickupsOfDroppedItems_COOP = 0x8,
+    DontSpawnCoopOnlyItems_COOP = 0x10,
+    DontSpawnCoopOnlyThings_COOP = 0x20,
+    RemeberLastWeapon_COOP = 0x40,
+    PistolStart_COOP = 0x80,
+    Unknown = 0x1_00,
+    Unknown1 = 0x2_00,
+    Unknown2 = 0x4_00,
+    Unknown3 = 0x8_00,
+    Unknown4 = 0x10_00,
+    Unknown5 = 0x20_00,
+    Unknown6 = 0x40_00,
+    Unknown7 = 0x80_00,
+    Unknown8 = 0x1_00_00,
+    Unknown9 = 0x2_00_00,
+    Unknown10 = 0x4_00_00,
+    Unknown11 = 0x8_00_00,
+    Unknown12 = 0x10_00_00,
+    Unknown13 = 0x20_00_00,
+    Unknown14 = 0x40_00_00,
+    Unknown15 = 0x80_00_00,
+    Unknown16 = 0x1_00_00_00,
+    Unknown17 = 0x2_00_00_00,
+    Unknown18 = 0x4_00_00_00,
+    Unknown19 = 0x8_00_00_00,
+    Unknown20 = 0x10_00_00_00,
+    Unknown21 = 0x20_00_00_00,
+    Unknown22 = 0x40_00_00_00,
+    Unknown23 = 0x80_00_00_00,
+}

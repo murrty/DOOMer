@@ -1,0 +1,40 @@
+﻿namespace DOOMer.Core;
+
+using System;
+
+[Flags]
+public enum DMFLAGS2 : uint {
+    None = 0x0,
+    Unknown1 = 0x1,
+    DropWeapon = 0x2,
+    Unknown2 = 0x4,
+    Unknown3 = 0x8,
+    NoTeamChanging_DM = 0x10,
+    Unknown4 = 0x20,
+    DoubleAmmo = 0x40,
+    Degeneration = 0x80,
+    AllowBfgAiming = 0x1_00,
+    BarrelsRespawn_DM = 0x2_00,
+    RespawnProtection_DM = 0x4_00,
+    Unknown5 = 0x8_00,
+    SpawnWhereDied_COOP = 0x10_00,
+    KeepFragsGained_DM = 0x20_00,
+    NoRespawn = 0x40_00,
+    LoseFragOnDeath_DM = 0x80_00,
+    InfiniteInventory = 0x1_00_00,
+    NoMonstersToExit = 0x2_00_00,
+    AllowAutomap = 0x4_00_00,
+    AutomapAllies = 0x8_00_00,
+    AllowSpying = 0x10_00_00,
+    ChasecamCheat = 0x20_00_00,
+    DisallowSuicide = 0x40_00_00,
+    AllowAutoAim = 0x80_00_00,
+    CheckAmmoForWeaponSwitch = 0x1_00_00_00,
+    IconOfSinsDeathKisItsSpawns = 0x2_00_00_00,
+    EndSectorCountsForKillPercent = 0x4_00_00_00,
+    BigPowerupsRespawn = 0x8_00_00_00,
+    Unknown6 = 0x10_00_00_00,
+    Unknown7 = 0x20_00_00_00,
+    AllowVerticalBulletSpread = 0x40_00_00_00,
+    Unknown8 = 0x80_00_00_00,
+}

@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <LangVersion>preview</LangVersion>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Configurations>Debug;Release;ReleaseLocal</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DefineConstants>$(DefineConstants);ENABLE_LEGACY_MENUS</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebugType>portable</DebugType>
+    <DefineConstants>$(DefineConstants);ENABLE_LEGACY_MENUS</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DefineConstants>$(DefineConstants);ENABLE_LEGACY_MENUS</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLocal|AnyCPU'">
+    <DebugType>embedded</DebugType>
+    <Optimize>True</Optimize>
+    <DefineConstants>$(DefineConstants);ENABLE_LEGACY_MENUS</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>none</DebugType>
+    <DefineConstants>$(DefineConstants);ENABLE_LEGACY_MENUS</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLocal|x64'">
+    <DebugType>embedded</DebugType>
+    <Optimize>True</Optimize>
+    <DefineConstants>$(DefineConstants);ENABLE_LEGACY_MENUS</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DOOMer.Core\DOOMer.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ExplorerTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="System\Windows\Forms\ContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="System\Windows\Forms\MainMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="System\Windows\Forms\MdiWindowDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="System\Windows\Forms\Menu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="System\Windows\Forms\MenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="System\Windows\Forms\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="System\Windows\Forms\StatusBarPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

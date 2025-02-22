@@ -1,0 +1,40 @@
+﻿namespace DOOMer.Core;
+
+using System;
+
+[Flags]
+public enum DMFLAGS : uint {
+    None = 0x0,
+    AllowHealth_DM = 0x1,
+    AllowPowerups_DM = 0x2,
+    WeaponsStay_DM = 0x4,
+    FallingDamage_Old = 0x8,
+    FallingDamage_Hexen = 0x10,
+    FallingDamage_Strige = 0x20,
+    SameMap_DM = 0x40,
+    SpawnFarthest_DM = 0x80,
+    ForceRespawn  = 0x1_00,
+    AllowArmor_DM = 0x2_00,
+    AllowExit_DM = 0x4_00,
+    InfiniteAmmo = 0x8_00,
+    NoMonsters = 0x10_00,
+    MonstersRespawn = 0x20_00,
+    ItemsRespawn = 0x40_00,
+    FastMonsters = 0x80_00,
+    AllowJump = 0x1_00_00,
+    AllowFreeLook = 0x2_00_00,
+    AllowFOV = 0x4_00_00,
+    SpawnMultiWeapons_COOP = 0x8_00_00,
+    AllowCrouch = 0x10_00_00,
+    LoseEntireInventory_COOP = 0x20_00_00,
+    KeepKeys_COOP = 0x40_00_00,
+    KeepWeapons_COOP = 0x80_00_00,
+    KeepArmor_COOP = 0x1_00_00_00,
+    KeepPowerUps_COOP = 0x2_00_00_00,
+    KeepAmmo_COOP = 0x4_00_00_00,
+    LoseHalfAmmo_COOP = 0x8_00_00_00,
+    Unknown = 0x10_00_00_00,
+    Unknown2 = 0x20_00_00_00,
+    Unknown3 = 0x40_00_00_00,
+    Unknown4 = 0x80_00_00_00,
+}
